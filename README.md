@@ -28,9 +28,9 @@ Preparation:
 PreInstall:
 ```
 sudo apt-get update
+sudo apt install build-essential dwarves git
 git clone https://github.com/Trololo87/rcraid-dkms.git
 cd ./rcraid-dkms/
-sudo apt install build-essential dwarves
 sudo cp /sys/kernel/btf/vmlinux /usr/lib/modules/`uname -r`/build/
 sudo make clean
 sudo make
