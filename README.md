@@ -57,7 +57,7 @@ Update kernel
 install Kernel
 sudo make clean
 sudo make KDIR=/lib/modules/{folder-with-new-kernel}/build/
-sudo cp rcraid.ko lib/modules/{folder-with-new-kernel}/kernel/drivers/scsi/rcraid.ko
+sudo cp rcraid.ko /lib/modules/{folder-with-new-kernel}/kernel/drivers/scsi/rcraid.ko
 sudo depmod -a {folder-with-new-kernel}
 sudo cp -ap /boot/initrd.img-{folder-with-new-kernel} /boot/initrd.img-{folder-with-new-kernel}.bak
 sudo mkinitramfs -o /boot/initrd.img-{folder-with-new-kernel} {folder-with-new-kernel}
