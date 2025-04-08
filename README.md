@@ -38,6 +38,7 @@ sudo cp rcraid.ko /lib/modules/`uname -r`/kernel/drivers/scsi
 sudo depmod -a
 sudo modprobe rcraid
 ```
+* Install Ubuntu
 
 PostInstall (don't restart):
 ```
